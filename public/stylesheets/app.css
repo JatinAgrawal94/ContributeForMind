@@ -172,9 +172,10 @@ footer{
     margin:10px;
 }
 
-.site-content-tile:hover{
+/* .site-content-tile:hover{
     background-color:#373737;
-}
+}  */
+
 .site-content-tile div{
     display: flex;
     flex-direction: column;

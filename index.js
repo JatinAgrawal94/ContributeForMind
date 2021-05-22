@@ -105,7 +105,7 @@ app.get('/spotify',(req,res)=>{
         content:data.spotify,
         name:'Spotify',
         'icon':'fab fa-spotify',
-        info:"Spotify Podcasts that one should listen to releive stress",
+        info:"Spotify Podcasts that one should listen to relieve stress",
         style:"color:#3bd75f"
     }});
 });
