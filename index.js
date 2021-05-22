@@ -1,10 +1,9 @@
 const express=require('express');
 const app=express();
-const port=5000;
 const data=require('./data.js');
 const dotenv=require('dotenv');
-
 dotenv.config();
+
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('public'));
@@ -140,7 +139,7 @@ app.get('/twitter',(req,res)=>{
         style:"color:#1da1f2"
     }});
 })
-
+const port=process.env.PORT || 5000
 app.listen(port,()=>{
     console.log(`Server is listening at ${port}`);
 })
