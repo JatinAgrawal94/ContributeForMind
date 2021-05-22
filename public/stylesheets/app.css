@@ -1,0 +1,276 @@
+body{
+    width:100%;
+    height:100%;
+    background-color: #121212;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+
+nav{
+    position:fixed;
+    z-index: 100000;
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    background-color:#1f1f1f;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+nav a{
+    font-size: 40px;
+    color: #6200ee;
+}
+
+nav a:hover{
+    color: #6200ee;
+}
+
+nav div{
+    width: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div a{
+    background-color: #6200ee;
+    border:none;
+    border-radius: 10%;
+    padding: 5px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    transition: 500ms;
+    animation-name: colorchange;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorchange{
+    0%{
+        background-color: #6200ee;
+        color: white;
+    }
+    50%{
+        background-color: red;
+        color: white;
+    }
+    100%{
+        background-color: #6200ee;
+        color: white;
+    }
+}
+
+ nav div a:hover{
+    /* background-color: red; */
+    color: white;
+} 
+
+.carousel-item img {
+    height:685px;
+    margin-top:4rem;
+}
+
+.quote-bar{
+    padding:30px;
+    background-color: #1f1f1f;
+    color:#bababa;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.job-tags{
+    padding: 30px 0px;
+    color:#bababa;
+    font-size: 30px;
+    text-align: center;
+}
+
+.tile-group{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 35px;
+    justify-content: space-between;
+}
+
+.tile{
+    background-color: #212121;
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    font-size: 65px;
+    align-items: center;
+    padding: 60px;
+    border-radius: 15px;
+    margin:20px;
+    transition: 500ms;
+}
+.tile p{
+    margin:0;
+    padding:0;
+    margin-bottom:8px;
+}
+
+.tile i{
+    margin:0;
+}
+
+.tile:hover{
+    /* background-color:#373737; */
+    background-color: #6200ee;
+    color:black;
+}
+
+footer{
+    background-color:#1f1f1f;
+    width: 100%;
+    padding: 30px;
+    color:#bababa;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* site specific css */
+
+.site-head{
+    padding-top: 6rem;
+    /* color:#bababa; */
+    font-size:70px;
+    padding-left:4rem;
+    display: flex;
+    align-items: center;
+}
+
+.site-head p{
+    margin: 0;
+}
+.site-head i{
+    margin: 0;
+}
+
+.site-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 10%;
+}
+
+.site-content-tile{
+    display: flex;
+    color: #bababa;
+    background-color: #212121;
+    padding:8px 30px;
+    border-radius: 20px;
+    align-items: center;
+    margin:10px;
+}
+
+.site-content-tile:hover{
+    background-color:#373737;
+}
+.site-content-tile div{
+    display: flex;
+    flex-direction: column;
+    padding:25px;
+}
+
+.site-content-tile a{
+    font-size: 50px;
+}
+
+.site-content-tile a:hover{
+    color:#6200ee;
+} 
+
+.site-content-tile p{
+    margin:0;
+}
+
+.site-content-tile p:first-child{
+    font-size: 30px;
+}
+
+.site-content-tile p:last-child{
+    font-size: 20px;
+}
+
+.site-info{
+    color: #bababa;
+    font-size:30px;
+    padding:0px 10%;
+}
+
+/* helplien file docs */
+
+
+.helpline-content{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 10%;
+}
+
+.helpline-content-tile{
+    display: flex;
+    color: #bababa;
+    background-color: #212121;
+    padding:8px 30px;
+    border-radius: 20px;
+    align-items: center;
+    margin:10px;
+    justify-content: space-between;
+}
+
+.helpline-content-tile a{
+    font-size: 50px;
+}
+
+.helpline-content-tile a:hover{
+    color:red;
+} 
+
+.helpline-content-tile p{
+    margin:0;
+}
+
+.helpline-info{
+    display: flex;
+    flex-direction: column;
+    padding:10px 10px;
+    width: 50%;
+}
+
+.helpline-info p:first-child{
+    font-size: 30px;
+}
+
+.helpline-info p:nth-child(2){
+    font-size: 20px;
+}
+
+.helpline-contact{
+    font-size:30px;
+    display: flex;
+    justify-content: end;
+}
+
+#contact-text{
+    background-color: #212121;
+    border:none;
+    color: #bababa;
+    width:fit-content;
+    outline: none;
+}
+
+#contact-text::selection{
+    background-color: #212121;
+}
+
+
